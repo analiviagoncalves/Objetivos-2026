@@ -2,7 +2,7 @@
 
 :root {
     --cor-de-fundo: #1E1E1E;
-    --verde: #ff57f77e;
+    --rosa: #ff57f77e;
     --branco: #FFFFFF;
     --botao-ativo: #d637aec0;
     --botao-inativo: rgba(58, 55, 94, 0.5);
@@ -58,4 +58,15 @@ body {
 
 .botoes {
     display: block;
+}
+@media screen and (min-width: 768px) {
+  /* Código omitido */
+
+  .botao:last-child {
+    border-radius: 0 40px 0 0;
+  }
+}
+.ativo {
+  background-color: var(--botao-ativo);
+  border-bottom: 4px solid var(--rosa);
 }
